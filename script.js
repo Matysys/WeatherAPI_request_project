@@ -14,10 +14,8 @@ const hidden = document.querySelector(".hidden");
 
 //Eventos
 btnSearch.addEventListener('click', (e) => {
-
     const city = cityInput.value;
     getWeatherData(city);
-
 });
 
 //Funções
@@ -27,7 +25,7 @@ const getWeatherData = async (city) => {
     try{
         const response = await axios.get(URL);
         const data = await response.data;
-        console.log(data);
+        console.log(data); //Para depuração se necessário
 
         const descriptionCap = data.weather[0].description;
 
@@ -39,16 +37,11 @@ const getWeatherData = async (city) => {
         weatherIcon.setAttribute("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`);
         country.setAttribute("src", `https://flagsapi.com/${data.sys.country}/shiny/64.png`);
         hidden.classList.remove("hidden");
-
-
-
     }catch(e) {
-        console.log(e);
-        alert("Requisição inválida: " + e);
+        alert("Requisição inválida: " + e); //Envia o erro em questão para o usuário
     }
 
 }
-
 
 /*
 const getWeatherData = (city) => {
@@ -64,9 +57,7 @@ const getWeatherData = (city) => {
 
         console.log(humidity);
         console.log(temperature);
-
     })
-
 }*/
 
 
