@@ -1,6 +1,6 @@
 //Variáveis
 
-const API_key = "5a9a82aaaa45ede1129c9aebb973865b";
+const API_key = "";
 let cityInput = document.querySelector("#city-input");
 let btnSearch = document.querySelector("#search");
 
