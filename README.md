@@ -12,6 +12,8 @@ Assim que o nome da cidade for digitado e o usuário clicar no botão do lado, a
 * Umidade
 * Velocidade do vento
 
+###[Link externo para testar](https://showweatherinfo.netlify.app/)
+
 A API key desse projeto é gratuita, então não há problema em deixa-lá pública. Você pode baixar esse projeto e executar no seu próprio dispotivo se quiser usar uma key diferente. Abra o arquivo `script.js` e altere a seguinte linha abaixo:
 
 ```js
