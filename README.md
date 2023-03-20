@@ -12,7 +12,7 @@ Assim que o nome da cidade for digitado e o usuário clicar no botão do lado, a
 * Umidade
 * Velocidade do vento
 
-Se por alguma razão a requisição não funcionar via GitHub Pages (o que é provável, pois eu retirei a key posteriormente), baixe esse projeto e execute no seu próprio dispotivo. Abra o arquivo `script.js` e altere a seguinte linha abaixo:
+A API key desse projeto é gratuita, então não há problema em deixa-lá pública. Você pode baixar esse projeto e executar no seu próprio dispotivo se quiser usar uma key diferente. Abra o arquivo `script.js` e altere a seguinte linha abaixo:
 
 ```js
 const API_key = "" //Coloque sua chave API dentro das aspas;
