@@ -1,6 +1,6 @@
 //Variáveis
 
-const API_key = "";
+const API_key = "5a9a82aaaa45ede1129c9aebb973865b";
 let cityInput = document.querySelector("#city-input");
 let btnSearch = document.querySelector("#search");
 
@@ -47,7 +47,7 @@ const getWeatherData = async (city) => {
 
     }catch(e){
         console.log(e);
-        alert("Local inválido");
+        alert("Requisição inválida: " + e);
     }    
 
 }

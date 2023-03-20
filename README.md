@@ -18,6 +18,7 @@ Se por alguma razão a requisição não funcionar via GitHub Pages (o que é pr
 const API_key = "" //Coloque sua chave API dentro das aspas;
 ```
 Você pode obter uma chave gratuitamente fazendo um cadastro [-->AQUI<--](https://openweathermap.org/api), e depois copiando e colando no local que eu indiquei.
+Sem essa key, você obterá o código de erro **401 Unauthorized**.
  
 ---
 
@@ -37,3 +38,4 @@ Você pode obter uma chave gratuitamente fazendo um cadastro [-->AQUI<--](https:
 **O resultado não é 100% preciso, mas é extremamente próximo e te dá uma noção sobre como está o clima geral na região X ou Y.**
 
 **O projeto embora seja bem simples, tem a finalidade de servir como um treino para o consumo de APIs. Nesse caso ela foi consumida via Front-end.**
+
