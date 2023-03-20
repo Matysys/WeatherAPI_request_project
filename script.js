@@ -25,7 +25,7 @@ btnSearch.addEventListener('click', (e) => {
 //Funções
 
 const getWeatherData = async (city) => {
-    const URL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=${API_key}&lang=pt_br`;
+    const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=${API_key}&lang=pt_br`;
 
     try{
     const response = await axios.get(URL);
@@ -39,7 +39,7 @@ const getWeatherData = async (city) => {
     description.innerHTML = descriptionCap.charAt(0).toUpperCase() + descriptionCap.slice(1);
     humidity.innerHTML = `${data.main.humidity}%`;
     wind.innerHTML = `${data.wind.speed}km/h`;
-    weatherIcon.setAttribute("src", `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`);
+    weatherIcon.setAttribute("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`);
     country.setAttribute("src", `https://flagsapi.com/${data.sys.country}/shiny/64.png`);
     hidden.classList.remove("hidden");
     
@@ -55,7 +55,7 @@ const getWeatherData = async (city) => {
 
 /*
 const getWeatherData = (city) => {
-    const URL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=${API_key}&lang=pt_br`;
+    const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=${API_key}&lang=pt_br`;
 
     axios.get(URL)
     .then(response => {
